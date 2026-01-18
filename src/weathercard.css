@@ -1,0 +1,58 @@
+.weatherinfo-container{
+   text-align: center; 
+font-weight: bold;
+font-size:medium;
+   border-radius:10px;
+   padding:10px;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+.weatherinfo-container.clear { background-image:url("clear.jpg");
+    background-position: center; 
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.weatherinfo-container.cloudy { background-image:url("cloud.jpg");
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+.weatherinfo-container.rainy { 
+    color:rgb(25, 3, 53);
+     background-image:url("rain.jpg");
+    
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+.weatherinfo-container.thunder { 
+     background-image:url("thunder.jpg");
+      color:black;
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+.weatherinfo-container.snow { background-image:url("snow.jpg");
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.weatherinfo-container.smoke { background-image:url("smoke.jpg");
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.weatherinfo-container.haze{  background-image:url("haze.jpg");
+   
+    background-position:center; 
+    background-size: cover;
+    background-repeat: no-repeat;}
+.weatherinfo-container.mist { background-image:url("mist.png");
+    background-position: center; 
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+.weatherinfo-container.default { background-color: #f0f0f0; }

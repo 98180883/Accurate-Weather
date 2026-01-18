@@ -1,0 +1,38 @@
+.aqi-info{
+    width:fit-content;
+    margin:auto;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    font-size:medium;
+    
+    margin-top:20px;
+    margin-bottom:8px;
+    border-radius: 8px;
+ padding :10px;
+ background-color:beige;
+}
+.Airbanner{
+    font-size: large;
+}
+.Aqibanner.Good{
+color:rgb(60, 120, 0)
+}
+.Aqibanner.Fair{
+color:rgb(135, 230, 94)
+}
+.Aqibanner.Moderate{
+color:rgb(57, 89, 25)
+}
+.Aqibanner.Poor{
+color:rgb(230, 215, 54)
+}
+.Aqibanner.VeryPoor{
+color:rgb(234, 34, 34)
+}
+
+@media(max-width:600px){
+    .AQI-Note{
+        font-size:10px;
+    }
+}

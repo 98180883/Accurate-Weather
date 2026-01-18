@@ -1,0 +1,87 @@
+html,body{
+  height:100%;
+}
+
+
+#root{
+  height:100%;
+}
+
+.app-root{
+min-height:100%;
+ background-image: url("./bg1.jpg");
+ background-size: cover;
+ background-position: center;
+  display:flex;
+ flex-direction: column;
+}
+
+.weather-container{
+ 
+flex:1;
+ text-align: center;
+padding:10px;
+  border-radius:10px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.loading{
+  background-color: azure;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  width:fit-content;
+  margin:auto;
+  font-size:large;
+}
+.error{
+background-color: azure;
+  color:rgb(192, 50, 50);
+  font-weight: bold;
+  width:fit-content;
+  margin:auto;
+  font-size:24px;
+
+}
+input{
+font-size:larger;
+font-weight: 500;
+color:black;
+}
+input:hover{
+outline: thick;
+cursor:text;
+}
+
+.aqi-btn:hover{
+  color:#c5e2c6;
+  font-size:large;
+  cursor:pointer;
+}
+
+button {
+ 
+padding: 8px;
+background-color : #16591c;
+color:white;
+border: #a8f38a;
+border-radius :4px;
+cursor:pointer;
+}
+button:hover {
+background-color:#2e7d32;
+
+}
+
+
+footer{
+
+  height:40px;
+ 
+  background-color:rgb(113, 139, 255);
+  font-style:italic;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}

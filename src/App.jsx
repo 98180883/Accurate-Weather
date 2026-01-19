@@ -95,7 +95,7 @@ catch(err){
     
    </div>
    <footer>
-    Dipanjan Karmakar
+    Weather Application Developed By Dipanjan Karmakar
     </footer>
     </div>
   )

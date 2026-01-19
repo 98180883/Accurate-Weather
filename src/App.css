@@ -52,7 +52,10 @@ input:hover{
 outline: thick;
 cursor:text;
 }
-
+.aqi-btn{
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
 .aqi-btn:hover{
   color:#c5e2c6;
   font-size:large;

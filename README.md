@@ -1,16 +1,45 @@
-# React + Vite
+##Title 
+🌤️ Weather & AQI Application(React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Description
+A responsive weather application built using React that shows real-time accurate weather information and Air Quality Index (AQI) using the OpenWeatherMap API.This project helped me to learn React fundamentals , real-world API handling , component-based architecture, keyboard support , and clean UI practices.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Search weather by city name
 
-## React Compiler
+🌍 Weather details:
+🕒 Date of Forecast display
+🌡️Temperature
+🤒Feels like
+💧Humidity
+⚖️Pressure
+🌬️Wind speed & direction
+☁️Overall weather condition
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌈Dynamic background based on weather condition
 
-## Expanding the ESLint configuration
+🍃 Air Quality Index (AQI) data
+🟢 AQI text color changes based on pollution level
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⌨️Keyboard (Enter key) support
+
+♻️Last searched city saved using localStorage & clear history option
+
+🛠️ Tech Stack :
+React (Vite)
+JavaScript (ES6+)
+CSS
+OpenWeatherMap API
+Netlify (Deployment)
+
+🔮Future Improvements(planned):
+Multi-day forecast
+Better UI animations
+Location-based weather
+Search history list
+
+🙌 Acknowledgements:
+OpenWeatherMap API
+React Documentation
+

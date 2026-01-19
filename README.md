@@ -4,6 +4,9 @@
 ##Description
 A responsive weather application built using React that shows real-time accurate weather information and Air Quality Index (AQI) using the OpenWeatherMap API.This project helped me to learn React fundamentals , real-world API handling , component-based architecture, keyboard support , and clean UI practices.
 
+🌐Live demo 
+ Live site : https://accurate-weather-aqi.netlify.app/ 
+
 ✨ Features
 
 🔍 Search weather by city name

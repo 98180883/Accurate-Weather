@@ -4,7 +4,7 @@ import WeatherCard from './weathercard.jsx'
 import Aqihandler from './aqi.jsx'
 import Searchedhist from './searchhistory.jsx'
 import Forecast from "./forecast.jsx";
-
+import bg2 from './bg2.jpg';
 import "./App.css";
 
 
@@ -121,7 +121,15 @@ useEffect(() => {
 
 
   return (
-  <div className="app-root">
+  <div className="app-root"
+ 
+      style={{
+        backgroundImage: `url(${bg2})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+      }}>
   <h1>Get Accurate Weather Details & AQI information</h1>
      <div className="weather-container">
      

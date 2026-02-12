@@ -20,10 +20,12 @@ transform: scale(1.05);
 
 @media(max-width:480px){
   .lastsearch{
-    font-size:18px;
+    font-size:14px;
   }
   .clearsearch{
-    font-size:12px;
-  }
 
+    font-size:12px;
+    padding:5px;
+  }
+  
 }

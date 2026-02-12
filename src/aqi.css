@@ -1,37 +1,44 @@
 .aqi-info{
     width:fit-content;
-    margin:auto;
+ margin:10px auto;
+ color: rgb(255, 255, 255);
+
     text-align: center;
     color:black;
     font-weight: bold;
-    font-size:medium;
-    margin-top:20px;
-    margin-bottom:8px;
-    border-radius: 8px;
+    font-size:18px;
+    border-radius:18px;
  padding :10px;
- background-color:beige;
+ 
 }
-.Airbanner{
-    font-size: large;
-}
+/* AQI Banner Styles */
 .Aqibanner.Good{
-color:rgb(60, 120, 0)
+      font-size: 24px;
+color:rgb(136, 255, 18)
 }
 .Aqibanner.Fair{
-color:rgb(135, 230, 94)
+      font-size: 24px;
+color:rgb(161, 255, 130)
 }
 .Aqibanner.Moderate{
-color:rgb(57, 89, 25)
+      font-size: 24px;
+color:rgb(249, 195, 46)
 }
 .Aqibanner.Poor{
-color:rgb(206, 96, 27)
+      font-size: 24px;
+color:rgb(206, 96, 27);
+font-size: 24px;
 }
 .Aqibanner.VeryPoor{
-color:rgb(234, 34, 34)
+      font-size: 24px;
+color:rgba(92, 0, 0, 0.75);
 }
 
 @media(max-width:600px){
-    .AQI-Note{
-        font-size:10px;
-    }
+
+  .aqi-info{ font-size:14px} 
+  .Aqibanner.Good, .Aqibanner.Fair, .Aqibanner.Moderate, .Aqibanner.Poor, .Aqibanner.VeryPoor
+  { 
+    font-size:16px; 
+}  
 }

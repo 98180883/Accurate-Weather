@@ -12,9 +12,9 @@ if (aqi == 4) return "Poor";
 const air = aqi.list[0].main.aqi;
 return (
 <div className='aqi-info'>
-    <h3>AQI : {air}</h3>
-    <p className={`Aqibanner ${AqiDescription(air)}`}> Air Quality : {AqiDescription(air)}</p>
-    <p className="AQI-Note">NOTE : Our AQI parameter has range from 0-5 where 0 means Excellent & 5 indicates Very-Poor Air Quality </p>
+    
+    <p className={`Aqibanner ${AqiDescription(air)}`}>Air Quality: {air} -  {AqiDescription(air)}</p>
+  
     </div>
 
 )

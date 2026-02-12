@@ -1,6 +1,11 @@
 import locationIcon from "./location.png";
 import "./weathercard.css";
-
+import air from "./air.png"
+import humidity from "./humidity.png"
+import pressure from "./pressure.png"
+import windDirection from "./wind-direction.png"
+import visibillity from "./visibillity.png"
+import fellslike from "./fellslike.png"
 function WeatherCard({weather,city}) {
   
   // date 
@@ -13,10 +18,6 @@ let currentdate = (month+1) + "/" + (date) + "/" + (year);
 
 // tempconverter 
 const convert = (temp) =>  ((9.0/5.0)*temp) +32.0;
- 
-
-
-
   const getBackgroundColor = () => {
   if (!weather) return "default";
 
@@ -35,23 +36,30 @@ if (condition === "Mist") return "mist";
 };
 
   return (
+    <div id="weather">
    <div className={`weatherinfo-container ${getBackgroundColor()}`}>
-
       <p>Date of Forecast: {currentdate}</p>
-       <h3><img src = {locationIcon} alt= "location icon" width="20" />City : {weather.name}</h3>
+      <p><img src={locationIcon} alt="Location Icon" className="location-icon" width="10" height="10" />{city}</p>
+
+
+      <p id="temp">{weather.main.temp.toFixed(0)}°C / {convert(weather.main.temp).toFixed(0)}°F </p> 
      
-      <p>🌡️Temperature: {weather.main.temp.toFixed(0)}°C / {convert(weather.main.temp).toFixed(0)}°F</p>
-      
-      <p>🤒Feels like: {weather.main.feels_like.toFixed(0)}°C / {convert(weather.main.feels_like).toFixed(0)}°F</p>
+      <p>{weather.weather[0].main}</p>
+      </div>
 
-      <p>💧Humidity: {weather.main.humidity}%</p>
-      <p>⚖️Pressure: {weather.main.pressure} hPa</p>
 
-      <p>🌬️Wind speed: {weather.wind.speed} m/s</p>
-      <p>🧭Wind direction: {weather.wind.deg}°</p>
-      <p>☁️Overall: {weather.weather[0].main}</p>
-      
-    </div>
+
+<div id="weatherinfo">
+          <p id="feels-like"><img src={fellslike}/><br />Feels like {weather.main.feels_like.toFixed(0)}°C / {convert(weather.main.feels_like).toFixed(0)}°F</p>
+      <p><img src={humidity}/><br />Humidity <br />{weather.main.humidity}%</p>
+      <p><img src={pressure}/>< br/>Pressure <br />{weather.main.pressure} hPa</p>
+
+      <p><img src={air}/>< br/>Wind speed <br />{weather.wind.speed} m/s</p>
+      <p><img src={windDirection}/>< br/>Direction<br />{weather.wind.deg}°</p>
+       <p><img src={visibillity}/><br />Visibillity <br />{weather.visibility/1000} km</p>
+        
+      </div>
+  </div>
   );
 }
 

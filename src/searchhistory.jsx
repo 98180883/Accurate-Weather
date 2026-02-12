@@ -5,8 +5,9 @@ function Searchedhist({lastcity , setlastcity}){
     <div>
     <p className="lastsearch" >
       Last Searched City : {lastcity}
-      </p>
-         <span className="clearsearch" onClick={()=> setlastcity("")}>Clear History</span>
+ 
+         <button className="clearsearch" onClick={()=> setlastcity("")}>Clear History</button>
+              </p>
   </div>
   )
 }
